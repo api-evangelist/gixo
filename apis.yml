@@ -1,8 +1,27 @@
 aid: gixo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/gixo.png
 name: Gixo
-description: 'Gixo is a company surfaced as a portfolio company of cowboy-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Gixo was a consumer live-streaming fitness startup (coached, real-time running
+  and workout classes delivered to a mobile app), surfaced as a portfolio company of
+  Cowboy Ventures and added to the API Evangelist network as an enrichment lead. The
+  enrichment pipeline probed the company on 2026-07-19 and found no live provider surface:
+  gixo.com and www.gixo.com both HTTP 301-redirect to www.bodi.com (a Beachbody / BODi
+  property), consistent with Gixo having been acquired and wound down into the Openfit
+  / Beachbody / BODi fitness platform. No api.gixo.com or developer.gixo.com host resolves
+  in DNS, and no /.well-known/ discovery surface, developer portal, documentation, SDKs,
+  or public API is published. There is no API program to enrich; this profile is retained
+  as a historical consumer-sector lead rather than an active provider.'
 url: https://raw.githubusercontent.com/api-evangelist/gixo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +29,26 @@ x-backed-by:
 - cowboy-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct-or-acquired
+x-status-evidence: 'gixo.com HTTP 301 -> https://www.bodi.com/blog/openfit-beachbody-bodi (probed 2026-07-19); api./developer. subdomains do not resolve'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Fitness
+- Health
+- Streaming
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
