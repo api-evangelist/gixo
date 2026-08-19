@@ -31,7 +31,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 x-status: defunct-or-acquired
 x-status-evidence: 'gixo.com HTTP 301 -> https://www.bodi.com/blog/openfit-beachbody-bodi (probed 2026-07-19); api./developer. subdomains do not resolve'
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
